@@ -1,6 +1,8 @@
 # websadista
 website &lt;3
 
-combined some from my old code from high school and ict days, its been a while since I touched html and css so I had to google and stuff.
+This website will show my resume and other information about me.
+-I combined some old html codes from my old school stuff and as well codes that ~~I took~~ were inspired from a bunch of bootstrap portfolio website template.
+-Yes I did google stuff, cuz I haven't touch html, css, and js in so long, also a new addition of bootstrap.
 
-You will see my resume and stuff that I like.
+
