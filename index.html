@@ -7,13 +7,14 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <style>
-  /* color palette — might tweak the accent later, still deciding */
+  /* color palette — pulled from the hero photo: warm peach/orange, paper-flower pink, hazy sky blue */
   :root{
     --bg:#0e0f12;
     --bg-soft:#15171c;
     --card:#1a1d24;
     --accent:#ffb347;
-    --accent-2:#7cf2c4;
+    --accent-2:#ff6f91;
+    --accent-3:#7fb3d9;
     --border:#2a2e37;
   }
   html{scroll-behavior:smooth;}
@@ -36,6 +37,12 @@
   .hero-tagline{text-shadow:0 1px 10px rgba(0,0,0,.7);}
   .accent{color:var(--accent);}
   .accent-2{color:var(--accent-2);}
+  .accent-3{color:var(--accent-3);}
+  .badge-accent{background:var(--accent);color:#141414;}
+  .badge-accent-2{background:var(--accent-2);color:#141414;}
+  .badge-accent-3{background:var(--accent-3);color:#141414;}
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus{color:var(--accent-3);}
   .btn-accent{background:var(--accent);color:#141414;font-weight:600;border:none;}
   .btn-accent:hover{background:#ffc670;color:#141414;}
   .profile-photo{width:180px;height:180px;object-fit:cover;border-radius:50%;border:3px solid var(--accent);}
@@ -173,26 +180,26 @@
     <div class="row g-4">
       <div class="col-lg-6">
         <h3 class="mb-3 fs-5">Technical Skills</h3>
-        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">Java</span>
-        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">Python</span>
-        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">PHP</span>
-        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">JavaScript</span>
-        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">HTML &amp; CSS</span>
-        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">SQL / SQLite</span>
-        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">NetBeans</span>
-        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">WordPress</span>
-        <span class="badge rounded-pill text-bg-secondary me-2 mb-2 p-2">Linux (CachyOS, Arch, Fedora, Mint)</span>
+        <span class="badge rounded-pill badge-accent me-2 mb-2 p-2">Java</span>
+        <span class="badge rounded-pill badge-accent me-2 mb-2 p-2">Python</span>
+        <span class="badge rounded-pill badge-accent me-2 mb-2 p-2">PHP</span>
+        <span class="badge rounded-pill badge-accent me-2 mb-2 p-2">JavaScript</span>
+        <span class="badge rounded-pill badge-accent me-2 mb-2 p-2">HTML &amp; CSS</span>
+        <span class="badge rounded-pill badge-accent me-2 mb-2 p-2">SQL / SQLite</span>
+        <span class="badge rounded-pill badge-accent me-2 mb-2 p-2">NetBeans</span>
+        <span class="badge rounded-pill badge-accent me-2 mb-2 p-2">WordPress</span>
+        <span class="badge rounded-pill badge-accent-3 me-2 mb-2 p-2">Linux (CachyOS, Arch, Fedora, Mint)</span>
       </div>
       <div class="col-lg-6">
         <h3 class="mb-3 fs-5">Creative Tools</h3>
-        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Premiere Pro</span>
-        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Lightroom</span>
-        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Photoshop</span>
-        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">DaVinci Resolve</span>
-        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">CapCut</span>
-        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Canva</span>
-        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Photography</span>
-        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Videography</span>
+        <span class="badge rounded-pill badge-accent-2 me-2 mb-2 p-2">Premiere Pro</span>
+        <span class="badge rounded-pill badge-accent-2 me-2 mb-2 p-2">Lightroom</span>
+        <span class="badge rounded-pill badge-accent-2 me-2 mb-2 p-2">Photoshop</span>
+        <span class="badge rounded-pill badge-accent-2 me-2 mb-2 p-2">DaVinci Resolve</span>
+        <span class="badge rounded-pill badge-accent-2 me-2 mb-2 p-2">CapCut</span>
+        <span class="badge rounded-pill badge-accent-2 me-2 mb-2 p-2">Canva</span>
+        <span class="badge rounded-pill badge-accent-2 me-2 mb-2 p-2">Photography</span>
+        <span class="badge rounded-pill badge-accent-2 me-2 mb-2 p-2">Videography</span>
       </div>
     </div>
 
@@ -380,17 +387,17 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="mb-4">
-          <span class="badge text-bg-warning mb-2">Java &middot; NetBeans</span>
+          <span class="badge badge-accent mb-2">Java &middot; NetBeans</span>
           <h3 class="fs-5 mb-1">Bus Management System</h3>
           <p class="section-muted mb-0">Group project: validation, maintenance, assignment, alerts &amp; reports modules.</p>
         </div>
         <div class="mb-4">
-          <span class="badge text-bg-warning mb-2">Java &middot; GUI</span>
+          <span class="badge badge-accent mb-2">Java &middot; GUI</span>
           <h3 class="fs-5 mb-1">BBC Payroll System</h3>
           <p class="section-muted mb-0">A Java payroll GUI for a fictional company, with custom color theming.</p>
         </div>
         <div class="mb-0">
-          <span class="badge text-bg-warning mb-2">SQLite &middot; Letos</span>
+          <span class="badge badge-accent mb-2">SQLite &middot; Letos</span>
           <h3 class="fs-5 mb-1">Employee &amp; Payroll DB</h3>
           <p class="section-muted mb-0">Two-table relational activity: EmployeeInfo &amp; Payroll.</p>
         </div>
