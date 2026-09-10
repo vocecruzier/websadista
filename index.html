@@ -25,7 +25,40 @@
   .navbar-dark-custom{background:rgba(14,15,18,0.95);border-bottom:1px solid var(--border);}
   .navbar-brand-custom{font-weight:700;letter-spacing:1px;}
   .navbar-brand-custom span{color:var(--accent);}
+  #home{min-height:100vh;display:flex;align-items:center;
+    background:radial-gradient(circle at 80% 20%, rgba(255,179,71,0.08), transparent 40%),
+               radial-gradient(circle at 10% 80%, rgba(124,242,196,0.06), transparent 40%);}
+  .hero-name{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:700;}
+  .accent{color:var(--accent);}
+  .accent-2{color:var(--accent-2);}
+  .btn-accent{background:var(--accent);color:#141414;font-weight:600;border:none;}
+  .btn-accent:hover{background:#ffc670;color:#141414;}
+  .profile-photo{width:180px;height:180px;object-fit:cover;border-radius:50%;border:3px solid var(--accent);}
+  .about-card{background:var(--card);border:1px solid var(--border);border-radius:16px;}
+  .about-card .bi{color:var(--accent);font-size:1.5rem;}
+  .card-custom{background:var(--card);border:1px solid var(--border);border-radius:16px;}
+  .card-custom .card-title{color:#eef0f3;}
+  /* leftover from the old project cards, not used right now but keeping it around */
+  .card-thumb{height:160px;display:flex;align-items:center;justify-content:center;font-size:2.4rem;color:#fff;border-top-left-radius:16px;border-top-right-radius:16px;}
+  .gallery-photo-card{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--border);}
+  .gallery-photo-img{width:100%;height:220px;object-fit:cover;display:block;transition:transform .3s ease;}
+  .gallery-photo-card:hover .gallery-photo-img{transform:scale(1.06);}
+  .gallery-photo-caption{position:absolute;left:0;right:0;bottom:0;padding:.6rem .9rem;font-size:.8rem;color:#fff;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent);}
+  .grad1{background:linear-gradient(135deg,#3a2f1b,#6b4c1a);}
+  .grad2{background:linear-gradient(135deg,#1b2f2a,#1a5c4a);}
+  .grad3{background:linear-gradient(135deg,#1b1f3a,#2e2a6b);}
+  .grad4{background:linear-gradient(135deg,#3a1b2f,#6b1a4c);}
+  .grad5{background:linear-gradient(135deg,#2f2a1b,#5c4a1a);}
+  .grad6{background:linear-gradient(135deg,#1b3a33,#1a6b5c);}
+  .gear-item{background:var(--card);border:1px solid var(--border);border-radius:14px;}
+  .gear-item .bi{color:var(--accent-2);font-size:1.4rem;}
+  .form-control-custom{background:var(--bg-soft);border:1px solid var(--border);color:#eef0f3;}
+  .form-control-custom:focus{background:var(--bg-soft);color:#eef0f3;border-color:var(--accent);box-shadow:0 0 0 .2rem rgba(255,179,71,.15);}
+  .contact-card{background:var(--card);border:1px solid var(--border);border-radius:20px;}
+  .social-btn{border:1px solid var(--border);color:#eef0f3;}
+  .social-btn:hover{background:var(--accent);color:#141414;border-color:var(--accent);}
   footer{border-top:1px solid var(--border);}
+  .back-to-top{position:fixed;bottom:24px;right:24px;width:46px;height:46px;border-radius:50%;background:var(--accent);color:#141414;z-index:999;}
   .navbar-toggler{border-color:var(--border);}
   .navbar-toggler-icon{filter:invert(1) grayscale(1) brightness(2);}
 
@@ -70,42 +103,235 @@
 <main>
 
 <!-- HOME -->
-<!-- just the section shells for now, filling these in next commit -->
 <section id="home">
   <div class="container">
-    <h1>Hi, I'm Mey.</h1>
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <p class="section-label mb-3">Information Systems Student &middot; Visual Storyteller</p>
+        <h1 class="hero-name mb-3">Hi, I'm <span class="accent">Mey</span>.</h1>
+        <p class="section-muted fs-5 mb-4">I build systems and shoot stories &mdash; mixing <span class="accent">code</span> with <span class="accent-2">color-graded frames</span>.</p>
+        <!-- 3 CTA buttons, might be too many but leaving them for now -->
+        <a href="#projects" class="btn btn-accent btn-lg me-2 mb-2">See My Work</a>
+        <a href="#contact" class="btn btn-outline-light btn-lg me-2 mb-2">Get In Touch</a>
+        <a href="#resume" class="btn btn-outline-light btn-lg mb-2"><i class="bi bi-file-earmark-person me-1"></i>Resume</a>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="bg-panel">
   <div class="container">
-    <h2>About Me</h2>
+    <p class="section-label text-center mb-2">Get To Know Me</p>
+    <h2 class="text-center mb-5">About Me</h2>
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-3 text-center">
+        <!-- swapped this to my actual photo, was a placeholder before -->
+        <img src="materials/profile.jpg" alt="Portrait photo of Mark Justine Dela Cruz" class="profile-photo mb-3 mb-lg-0">
+      </div>
+      <div class="col-lg-5">
+        <p class="section-muted fs-6">
+          I'm a freshman BSIS (Information Systems) student at De La Salle-College of Saint Benilde,
+          set to graduate in 2029. Alongside coursework in Java programming and systems design,
+          I've been building out a whole other track in photography and filmmaking &mdash; shooting with
+          manual and vintage lenses, and color grading footage in DaVinci Resolve.
+        </p>
+        <p class="section-muted fs-6">
+          I like the overlap: building things that work, and making things that look good.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="about-card p-3 h-100">
+              <i class="bi bi-code-slash"></i>
+              <h3 class="mt-2 fs-6">Systems &amp; Dev</h3>
+              <p class="section-muted small mb-0">Java, NetBeans GUIs, SQL/database work.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="about-card p-3 h-100">
+              <i class="bi bi-camera"></i>
+              <h3 class="mt-2 fs-6">Photography</h3>
+              <p class="section-muted small mb-0">Sony &amp; Fujifilm systems, manual lenses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
   <div class="container">
-    <h2>Skills &amp; Tools</h2>
+    <p class="section-label text-center mb-2">Capabilities</p>
+    <h2 class="text-center mb-5">Skills &amp; Tools</h2>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h3 class="mb-3 fs-5">Skills</h3>
+        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">Java</span>
+        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">SQL / SQLite</span>
+        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">NetBeans</span>
+        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">DaVinci Resolve</span>
+        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Photography</span>
+        <span class="badge rounded-pill text-bg-secondary me-2 mb-2 p-2">Linux / NixOS</span>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="mb-3 fs-5">Gear I Shoot With</h3>
+        <!-- just my current setup, will update if I upgrade lenses -->
+        <div class="row g-3">
+          <div class="col-6"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Sony ZV-E10</div></div>
+          <div class="col-6"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>18-105mm f/4 G OSS</div></div>
+          <div class="col-6"><div class="gear-item p-3 text-center h-100"><i class="bi bi-record-circle d-block mb-1"></i>Meike 35mm</div></div>
+          <div class="col-6"><div class="gear-item p-3 text-center h-100"><i class="bi bi-film d-block mb-1"></i>DaVinci Resolve</div></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery" class="bg-panel">
   <div class="container">
-    <h2>Gallery</h2>
+    <p class="section-label text-center mb-2">Behind The Lens</p>
+    <h2 class="text-center mb-5">Gallery</h2>
+
+    <div class="row g-3">
+
+      <!-- these 5 are straight from my gallery folder, some still need better captions -->
+      <div class="col-6 col-md-4">
+        <figure class="gallery-photo-card mb-0">
+          <img src="materials/gallery/DSC06453.jpg" alt="Maternity shoot photographed on a suspension bridge" class="gallery-photo-img">
+          <figcaption class="gallery-photo-caption">Maternity Shoot &middot; Retro Lens</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-6 col-md-4">
+        <figure class="gallery-photo-card mb-0">
+          <img src="materials/gallery/IMG_0123.JPG" alt="Badminton action shot from a sports photography series" class="gallery-photo-img">
+          <figcaption class="gallery-photo-caption">Badminton Series &middot; Sports</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-6 col-md-4">
+        <figure class="gallery-photo-card mb-0">
+          <img src="materials/gallery/IMG_0127.JPG" alt="Test footage still from the Sony ZV-E10 gear diaries" class="gallery-photo-img">
+          <figcaption class="gallery-photo-caption">Sony ZV-E10 Diaries &middot; Gear Test</figcaption>
+        </figure>
+      </div>
+
+      <!-- havent thought of good captions for these two yet -->
+      <div class="col-6 col-md-4">
+        <figure class="gallery-photo-card mb-0">
+          <img src="materials/gallery/IMG_0130.JPG" alt="Photography portfolio piece" class="gallery-photo-img">
+          <figcaption class="gallery-photo-caption">From The Field</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-6 col-md-4">
+        <figure class="gallery-photo-card mb-0">
+          <img src="materials/gallery/IMG_0133.JPG" alt="Photography portfolio piece" class="gallery-photo-img">
+          <figcaption class="gallery-photo-caption">From The Field</figcaption>
+        </figure>
+      </div>
+
+    </div>
   </div>
 </section>
 
 <!-- RESUME -->
+<!-- basically copy-pasted this straight from my resume pdf -->
 <section id="resume">
   <div class="container">
-    <h2>Resume</h2>
+    <p class="section-label text-center mb-2">Full Background</p>
+    <h2 class="text-center mb-2">Resume</h2>
+    <p class="section-muted text-center mb-5">Mark Justine V. Dela Cruz &middot; Antipolo City, Philippines &middot; +63 945 708 5321 &middot; markjdelacruz730@gmail.com</p>
+
+    <div class="row g-4">
+      <div class="col-lg-8">
+
+        <div class="card-custom p-4 mb-4">
+          <h3 class="mb-2 fs-5"><i class="bi bi-bullseye accent me-2"></i>Objective</h3>
+          <p class="section-muted mb-0">
+            I'm an Information Systems student with a hands-on mix of technical IT skills and creative media
+            experience. My background ranges from managing Linux systems and basic web development to
+            handling live streaming setups and freelance photography projects.
+          </p>
+        </div>
+
+        <div class="card-custom p-4 mb-4">
+          <h3 class="mb-3 fs-5"><i class="bi bi-briefcase accent me-2"></i>Professional Experience &amp; Projects</h3>
+
+          <h4 class="mb-1 fs-6">Work Immersion <span class="section-muted fw-normal">(Jan&ndash;Apr 2025)</span></h4>
+          <p class="section-muted small mb-2">National Christian Life College, Redeem IT (IT Department) &mdash; Metro Manila, Philippines</p>
+          <ul class="section-muted small mb-3">
+            <li>Assisted in setting up and testing live media streaming setups using RTMP protocols and network configurations.</li>
+            <li>Developed custom WordPress plugins using PHP hooks to add required features.</li>
+            <li>Worked with local databases via WAMP/XAMPP stacks, running standard SQL queries to handle application data.</li>
+          </ul>
+
+          <h4 class="mb-1 fs-6">Media Experience</h4>
+          <p class="section-muted small mb-2">School Media Team &amp; Church Media Team</p>
+          <ul class="section-muted small mb-3">
+            <li>Cinematography, photography, and videography experience for institutional and organizational events.</li>
+            <li>Edited and finalized multimedia content utilizing DaVinci Resolve, Adobe Photoshop, and Adobe Lightroom.</li>
+          </ul>
+
+          <h4 class="mb-1 fs-6">Freelance Experience</h4>
+          <p class="section-muted small mb-0">
+            Handled freelance photography projects, including client consultations, portrait sessions, and
+            photo editing based on client requests.
+          </p>
+        </div>
+
+        <div class="card-custom p-4">
+          <h3 class="mb-3 fs-5"><i class="bi bi-gear-wide-connected accent me-2"></i>Technical &amp; Creative Skills</h3>
+          <p class="section-muted small mb-2"><strong class="text-light">Operating Systems &amp; Linux Setup:</strong> Hands-on experience with Linux distributions (CachyOS, NixOS, Arch Linux, Fedora, Mint), package management, and basic shell scripting.</p>
+          <p class="section-muted small mb-2"><strong class="text-light">Development &amp; Backend:</strong> Practical knowledge of Java, Python, PHP, JavaScript, HTML, CSS, and SQL (WAMP/XAMPP); experience setting up RTMP streaming and basic WordPress plugins.</p>
+          <p class="section-muted small mb-2"><strong class="text-light">Multimedia &amp; Cinematography:</strong> Cinematography, Photography, Videography, Adobe Creative Suite (Premiere Pro, Lightroom, Photoshop), DaVinci Resolve Studio, CapCut, Canva.</p>
+          <p class="section-muted small mb-0"><strong class="text-light">Languages:</strong> Bilingual in English and Tagalog/Filipino.</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-4">
+
+        <div class="card-custom p-4 mb-4">
+          <h3 class="mb-3 fs-5"><i class="bi bi-mortarboard accent me-2"></i>Education</h3>
+          <p class="mb-1"><strong>De La Salle-College of Saint Benilde</strong></p>
+          <p class="section-muted small mb-3">Bachelor of Science in Information Systems &middot; 2025&ndash;Present</p>
+          <p class="mb-1"><strong>National Christian Life College</strong></p>
+          <p class="section-muted small mb-3">TVL-ICT &middot; 2022&ndash;2025</p>
+          <p class="mb-1"><strong>Mayamot National High School</strong></p>
+          <p class="section-muted small mb-3">2020&ndash;2022</p>
+          <p class="mb-1"><strong>AMA East Rizal</strong></p>
+          <p class="section-muted small mb-0">2016&ndash;2019</p>
+        </div>
+
+        <div class="card-custom p-4 mb-4">
+          <h3 class="mb-3 fs-5"><i class="bi bi-award accent me-2"></i>Academic Achievements</h3>
+          <ul class="section-muted small mb-0">
+            <li>Dean's List</li>
+            <li>Consistent Honor Student (2022&ndash;2025)</li>
+            <li>Consistent Perfect Attendance (2022&ndash;2025)</li>
+            <li>Participated in History Quiz-BEE (2019)</li>
+          </ul>
+        </div>
+
+        <div class="card-custom p-4">
+          <h3 class="mb-3 fs-5"><i class="bi bi-patch-check accent me-2"></i>Certifications</h3>
+          <p class="section-muted small mb-2">SAP Business One Student Courseware &mdash; Erudite Academy / DLS-CSB (2026)</p>
+          <p class="section-muted small mb-0">PSITE-Student Congress 2026: Security and AI for the Next Generation of Computing Students &mdash; PSITE-NCR (2026)</p>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
+<!-- still deciding how to lay these out, just placeholders for now -->
 <section id="projects" class="bg-panel">
   <div class="container">
     <h2>Projects &amp; Accomplishments</h2>
@@ -124,6 +350,9 @@
 <footer class="text-center py-4 section-muted small">
   <div class="container">&copy; 2026 Dela Cruz. All rights reserved.</div>
 </footer>
+
+<!-- little scroll-up button, shows on every section -->
+<a href="#home" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
 
 </body>
 </html>
