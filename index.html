@@ -7,15 +7,15 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <style>
-  /* color palette — pulled from the hero photo: warm peach/orange, paper-flower pink, hazy sky blue */
+  /* color palette — pulled from the hero photo: warm peach/orange, paper-flower pink, hazy sky blue, warm wood charcoal */
   :root{
-    --bg:#0e0f12;
-    --bg-soft:#15171c;
-    --card:#1a1d24;
+    --bg:#151009;
+    --bg-soft:#1e1710;
+    --card:#271e15;
     --accent:#ffb347;
     --accent-2:#ff6f91;
     --accent-3:#7fb3d9;
-    --border:#2a2e37;
+    --border:#3a2c1e;
   }
   html{scroll-behavior:smooth;}
   body{background:var(--bg);color:#eef0f3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
@@ -23,13 +23,14 @@
   .section-label{color:var(--accent);text-transform:uppercase;letter-spacing:3px;font-size:.8rem;font-weight:600;}
   section{padding:100px 0;scroll-margin-top:80px;}
   .bg-panel{background:var(--bg-soft);}
-  .navbar-dark-custom{background:rgba(14,15,18,0.95);border-bottom:1px solid var(--border);}
+  .navbar-dark-custom{background:rgba(21,16,9,0.95);border-bottom:1px solid var(--border);}
   .navbar-brand-custom{font-weight:700;letter-spacing:1px;}
   .navbar-brand-custom span{color:var(--accent);}
+  /* lowered the dark overlay a bunch so the actual photo shows through instead of just being a dark box */
   #home{min-height:100vh;display:flex;align-items:center;
     background:radial-gradient(circle at 80% 20%, rgba(255,179,71,0.08), transparent 40%),
-               radial-gradient(circle at 10% 80%, rgba(124,242,196,0.06), transparent 40%),
-               linear-gradient(180deg, rgba(14,15,18,0.15), rgba(14,15,18,0.35)),
+               radial-gradient(circle at 10% 80%, rgba(255,111,145,0.07), transparent 40%),
+               linear-gradient(180deg, rgba(21,16,9,0.15), rgba(21,16,9,0.35)),
                url('materials/gallery/_DSC1221.JPG');
     background-size:cover;
     background-position:center;}
@@ -41,6 +42,7 @@
   .badge-accent{background:var(--accent);color:#141414;}
   .badge-accent-2{background:var(--accent-2);color:#141414;}
   .badge-accent-3{background:var(--accent-3);color:#141414;}
+  /* swapped bootstrap's default warning/success/secondary badges for these so everything matches the photo */
   .navbar-nav .nav-link:hover,
   .navbar-nav .nav-link:focus{color:var(--accent-3);}
   .btn-accent{background:var(--accent);color:#141414;font-weight:600;border:none;}
@@ -89,6 +91,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark navbar-dark-custom fixed-top py-3">
     <div class="container">
+      <!-- using initials here instead of a full name, keeps it short -->
       <a class="navbar-brand navbar-brand-custom" href="#home">MJ<span>.</span></a>
       <!-- checkbox hack for the mobile menu since we're not using bootstrap's JS -->
       <input type="checkbox" id="navToggle" class="nav-toggle-check">
@@ -173,6 +176,7 @@
 </section>
 
 <!-- SKILLS -->
+<!-- this felt too bare before, pulled more of these straight off my resume -->
 <section id="skills">
   <div class="container">
     <p class="section-label text-center mb-2">Capabilities</p>
