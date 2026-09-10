@@ -331,17 +331,77 @@
 </section>
 
 <!-- PROJECTS -->
-<!-- still deciding how to lay these out, just placeholders for now -->
+<!-- keeping this as plain text for now, might turn these back into cards with real links later -->
 <section id="projects" class="bg-panel">
   <div class="container">
-    <h2>Projects &amp; Accomplishments</h2>
+    <p class="section-label text-center mb-2">Selected Work</p>
+    <h2 class="text-center mb-5">Projects &amp; Accomplishments</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="mb-4">
+          <span class="badge text-bg-warning mb-2">Java &middot; NetBeans</span>
+          <h3 class="fs-5 mb-1">Bus Management System</h3>
+          <p class="section-muted mb-0">Group project: validation, maintenance, assignment, alerts &amp; reports modules.</p>
+        </div>
+        <div class="mb-4">
+          <span class="badge text-bg-warning mb-2">Java &middot; GUI</span>
+          <h3 class="fs-5 mb-1">BBC Payroll System</h3>
+          <p class="section-muted mb-0">A Java payroll GUI for a fictional company, with custom color theming.</p>
+        </div>
+        <div class="mb-0">
+          <span class="badge text-bg-warning mb-2">SQLite &middot; Letos</span>
+          <h3 class="fs-5 mb-1">Employee &amp; Payroll DB</h3>
+          <p class="section-muted mb-0">Two-table relational activity: EmployeeInfo &amp; Payroll.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
   <div class="container">
-    <h2>Get In Touch</h2>
+    <p class="section-label text-center mb-2">Let's Talk</p>
+    <h2 class="text-center mb-5">Get In Touch</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <!-- prof said this can just be a static form for now -->
+        <div class="alert alert-warning" role="alert">
+          <i class="bi bi-info-circle me-1"></i>
+          This form is a static demo for this assignment &mdash; it isn't connected to a backend yet.
+        </div>
+
+        <div class="contact-card p-4 p-md-5">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nameInput" class="form-label">Name</label>
+                <input type="text" id="nameInput" class="form-control form-control-custom" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="emailInput" class="form-label">Email</label>
+                <input type="email" id="emailInput" class="form-control form-control-custom" placeholder="Your Email" required>
+              </div>
+              <div class="col-12">
+                <label for="messageInput" class="form-label">Message</label>
+                <textarea id="messageInput" class="form-control form-control-custom" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-accent px-5">Send Message</button>
+              </div>
+            </div>
+          </form>
+          <div class="text-center mt-4">
+            <!-- linkedin's real now, still need to add my actual github + ig -->
+            <a href="https://www.linkedin.com/in/mark-justine-dela-cruz-12b846435/" target="_blank" rel="noopener" class="btn btn-outline-light rounded-circle social-btn me-2" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline-light rounded-circle social-btn me-2" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline-light rounded-circle social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
