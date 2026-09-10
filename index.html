@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mey | Personal Portfolio</title>
+<title>Mark Justine Dela Cruz | Personal Portfolio</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <style>
@@ -28,11 +28,12 @@
   #home{min-height:100vh;display:flex;align-items:center;
     background:radial-gradient(circle at 80% 20%, rgba(255,179,71,0.08), transparent 40%),
                radial-gradient(circle at 10% 80%, rgba(124,242,196,0.06), transparent 40%),
-               linear-gradient(180deg, rgba(14,15,18,0.45), rgba(14,15,18,0.6)),
+               linear-gradient(180deg, rgba(14,15,18,0.15), rgba(14,15,18,0.35)),
                url('materials/gallery/_DSC1221.JPG');
     background-size:cover;
     background-position:center;}
-  .hero-name{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:700;text-shadow:0 2px 12px rgba(0,0,0,.5);}
+  .hero-name{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:700;text-shadow:0 2px 16px rgba(0,0,0,.75);}
+  .hero-tagline{text-shadow:0 1px 10px rgba(0,0,0,.7);}
   .accent{color:var(--accent);}
   .accent-2{color:var(--accent-2);}
   .btn-accent{background:var(--accent);color:#141414;font-weight:600;border:none;}
@@ -81,7 +82,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark navbar-dark-custom fixed-top py-3">
     <div class="container">
-      <a class="navbar-brand navbar-brand-custom" href="#home">Mey<span>.</span></a>
+      <a class="navbar-brand navbar-brand-custom" href="#home">MJ<span>.</span></a>
       <!-- checkbox hack for the mobile menu since we're not using bootstrap's JS -->
       <input type="checkbox" id="navToggle" class="nav-toggle-check">
       <label for="navToggle" class="navbar-toggler nav-toggle-label" aria-label="Toggle navigation">
@@ -110,7 +111,7 @@
     <div class="row align-items-center">
       <div class="col-lg-8">
         <h1 class="hero-name mb-3">Howdy.</h1>
-        <p class="section-muted fs-5 mb-4">I shoot <span class="accent-2">moments</span>, <span class="accent">build</span>, and color grade.</p>
+        <p class="section-muted fs-5 mb-4 hero-tagline">I shoot <span class="accent-2">moments</span>, <span class="accent">build</span>, and color grade.</p>
         <!-- 3 CTA buttons, might be too many but leaving them for now -->
         <a href="#projects" class="btn btn-accent btn-lg me-2 mb-2">See My Work</a>
         <a href="#contact" class="btn btn-outline-light btn-lg me-2 mb-2">Get In Touch</a>
@@ -199,22 +200,14 @@
       <div class="col-12">
         <h3 class="mb-3 fs-5">Gear I Shoot With</h3>
         <!-- current lineup, will update if I upgrade lenses -->
-        <div class="row g-3">
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Sony ZV-E10</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>18-105mm f/4 G OSS</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-record-circle d-block mb-1"></i>Meike 35mm</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-film d-block mb-1"></i>DaVinci Resolve</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Canon R50</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>RF-S 18-45mm f/4.5-6.3</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Canon 550D</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>EF-S 18-55mm IS</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>Sigma 18-200mm f/3.5-6.3</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Fujifilm X-A5</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>Fujinon XC 15-45mm</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Sony A6000</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>Sony E PZ 16-50mm</div></div>
-          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-badge-hd d-block mb-1"></i>Insta360 Ace Pro 2</div></div>
-        </div>
+        <ul class="section-muted">
+          <li>Sony ZV-E10 &mdash; 18-105mm f/4 G OSS, Meike 35mm</li>
+          <li>Canon R50 &mdash; RF-S 18-45mm f/4.5-6.3 IS STM</li>
+          <li>Canon 550D &mdash; EF-S 18-55mm IS, Sigma 18-200mm f/3.5-6.3 DC OS</li>
+          <li>Fujifilm X-A5 &mdash; Fujinon XC 15-45mm f/3.5-5.6 OIS PZ</li>
+          <li>Sony A6000 &mdash; Sony E PZ 16-50mm f/3.5-5.6 OSS</li>
+          <li>Insta360 Ace Pro 2</li>
+        </ul>
       </div>
     </div>
   </div>
