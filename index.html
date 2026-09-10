@@ -7,7 +7,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <style>
-  /* color palette, so I know what to change next time smh*/
+  /* color palette — pulled from the hero photo: warm peach/orange, paper-flower pink, hazy sky blue, warm wood charcoal */
   :root{
     --bg:#151009;
     --bg-soft:#1e1710;
@@ -26,7 +26,7 @@
   .navbar-dark-custom{background:rgba(21,16,9,0.95);border-bottom:1px solid var(--border);}
   .navbar-brand-custom{font-weight:700;letter-spacing:1px;}
   .navbar-brand-custom span{color:var(--accent);}
-  <!-- dimming -->
+  /* lowered the dark overlay a bunch so the actual photo shows through instead of just being a dark box */
   #home{min-height:100vh;display:flex;align-items:center;
     background:radial-gradient(circle at 80% 20%, rgba(255,179,71,0.08), transparent 40%),
                radial-gradient(circle at 10% 80%, rgba(255,111,145,0.07), transparent 40%),
@@ -42,7 +42,7 @@
   .badge-accent{background:var(--accent);color:#141414;}
   .badge-accent-2{background:var(--accent-2);color:#141414;}
   .badge-accent-3{background:var(--accent-3);color:#141414;}
-  <!--  bootsrap stuff -->
+  /* swapped bootstrap's default warning/success/secondary badges for these so everything matches the photo */
   .navbar-nav .nav-link:hover,
   .navbar-nav .nav-link:focus{color:var(--accent-3);}
   .btn-accent{background:var(--accent);color:#141414;font-weight:600;border:none;}
@@ -144,10 +144,12 @@
       <div class="col-lg-5">
         <p class="section-muted fs-6">
           I'm a freshman BSIS (Information Systems) student at De La Salle-College of Saint Benilde,
-          set to graduate in 2029.
+          set to graduate in 2029. Alongside coursework in Java programming and systems design,
+          I've been building out a whole other track in photography and filmmaking &mdash; shooting with
+          manual and vintage lenses, and color grading footage in DaVinci Resolve.
         </p>
         <p class="section-muted fs-6">
-          I just use my camera.
+          I like the overlap: building things that work, and making things that look good.
         </p>
         <a href="https://www.linkedin.com/in/mark-justine-dela-cruz-12b846435/" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light"><i class="bi bi-linkedin me-1"></i>Connect on LinkedIn</a>
       </div>
@@ -157,14 +159,14 @@
             <div class="about-card p-3 h-100">
               <i class="bi bi-code-slash"></i>
               <h3 class="mt-2 fs-6">Systems &amp; Dev</h3>
-              <p class="section-muted small mb-0">Java, NetBeans GUIs, SQL/database</p>
+              <p class="section-muted small mb-0">Java, NetBeans GUIs, SQL/database work.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="about-card p-3 h-100">
               <i class="bi bi-camera"></i>
               <h3 class="mt-2 fs-6">Photography</h3>
-              <p class="section-muted small mb-0">Sony &amp; Fujifilm and Canon</p>
+              <p class="section-muted small mb-0">Sony &amp; Fujifilm systems, manual lenses.</p>
             </div>
           </div>
         </div>
