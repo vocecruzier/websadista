@@ -28,11 +28,11 @@
   #home{min-height:100vh;display:flex;align-items:center;
     background:radial-gradient(circle at 80% 20%, rgba(255,179,71,0.08), transparent 40%),
                radial-gradient(circle at 10% 80%, rgba(124,242,196,0.06), transparent 40%),
-               linear-gradient(180deg, rgba(14,15,18,0.82), rgba(14,15,18,0.93)),
+               linear-gradient(180deg, rgba(14,15,18,0.45), rgba(14,15,18,0.6)),
                url('materials/gallery/_DSC1221.JPG');
     background-size:cover;
     background-position:center;}
-  .hero-name{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:700;}
+  .hero-name{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:700;text-shadow:0 2px 12px rgba(0,0,0,.5);}
   .accent{color:var(--accent);}
   .accent-2{color:var(--accent-2);}
   .btn-accent{background:var(--accent);color:#141414;font-weight:600;border:none;}
@@ -171,22 +171,49 @@
     <h2 class="text-center mb-5">Skills &amp; Tools</h2>
     <div class="row g-4">
       <div class="col-lg-6">
-        <h3 class="mb-3 fs-5">Skills</h3>
+        <h3 class="mb-3 fs-5">Technical Skills</h3>
         <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">Java</span>
+        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">Python</span>
+        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">PHP</span>
+        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">JavaScript</span>
+        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">HTML &amp; CSS</span>
         <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">SQL / SQLite</span>
         <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">NetBeans</span>
-        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">DaVinci Resolve</span>
-        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Photography</span>
-        <span class="badge rounded-pill text-bg-secondary me-2 mb-2 p-2">Linux / NixOS</span>
+        <span class="badge rounded-pill text-bg-warning me-2 mb-2 p-2">WordPress</span>
+        <span class="badge rounded-pill text-bg-secondary me-2 mb-2 p-2">Linux (CachyOS, Arch, Fedora, Mint)</span>
       </div>
       <div class="col-lg-6">
+        <h3 class="mb-3 fs-5">Creative Tools</h3>
+        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Premiere Pro</span>
+        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Lightroom</span>
+        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Photoshop</span>
+        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">DaVinci Resolve</span>
+        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">CapCut</span>
+        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Canva</span>
+        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Photography</span>
+        <span class="badge rounded-pill text-bg-success me-2 mb-2 p-2">Videography</span>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-1">
+      <div class="col-12">
         <h3 class="mb-3 fs-5">Gear I Shoot With</h3>
-        <!-- just my current setup, will update if I upgrade lenses -->
+        <!-- current lineup, will update if I upgrade lenses -->
         <div class="row g-3">
-          <div class="col-6"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Sony ZV-E10</div></div>
-          <div class="col-6"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>18-105mm f/4 G OSS</div></div>
-          <div class="col-6"><div class="gear-item p-3 text-center h-100"><i class="bi bi-record-circle d-block mb-1"></i>Meike 35mm</div></div>
-          <div class="col-6"><div class="gear-item p-3 text-center h-100"><i class="bi bi-film d-block mb-1"></i>DaVinci Resolve</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Sony ZV-E10</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>18-105mm f/4 G OSS</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-record-circle d-block mb-1"></i>Meike 35mm</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-film d-block mb-1"></i>DaVinci Resolve</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Canon R50</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>RF-S 18-45mm f/4.5-6.3</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Canon 550D</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>EF-S 18-55mm IS</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>Sigma 18-200mm f/3.5-6.3</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Fujifilm X-A5</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>Fujinon XC 15-45mm</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera d-block mb-1"></i>Sony A6000</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-camera-video d-block mb-1"></i>Sony E PZ 16-50mm</div></div>
+          <div class="col-6 col-md-3"><div class="gear-item p-3 text-center h-100"><i class="bi bi-badge-hd d-block mb-1"></i>Insta360 Ace Pro 2</div></div>
         </div>
       </div>
     </div>
